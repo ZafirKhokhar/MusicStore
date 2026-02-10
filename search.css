@@ -1,0 +1,127 @@
+.right-container .search{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.right-container .search form{
+    border-radius: 25px;
+    background-color: white;
+    width: 65%;
+    padding: 7px 15px;
+    box-shadow: 0 10px 6px -6px #777;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+}
+.right-container .search form button{
+    border: none;
+    background-color: transparent;
+}
+.right-container .search form button i{
+    font-size: 18px;
+    color: grey;
+}
+.right-container .search form input{
+    width: 65%;
+    outline: none;
+    border: none;
+}
+.search-heading{
+    width: 65%;
+    margin: 0 auto;
+}
+.search-list{
+    height: 430px;
+    width: 65%;
+    margin: 0 auto;
+    padding: 17px 20px 12px 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+.search-list ul a{
+    text-decoration: none;
+}
+.search-list ul li{
+    list-style: none;
+}
+.search-list ul{
+    height: 410px;
+    overflow-y: auto;
+    padding-left: 0px;
+}
+.search-list ul::-webkit-scrollbar{
+    width: 5px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.search-list ul .s-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: royalblue; */
+}
+.search-list ul li{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.search-list ul li:last-child{
+    border-bottom: 0px;
+}
+.search-list .s-row .song-info{
+    display: flex;
+    align-items: center;
+}
+.song-info .image-data{
+    height: 80px;
+    width: 80px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.song-info .image-data img{
+    height: 100% ;
+    width: 100%;
+    object-fit: fill;
+}
+.song-info .song-detail{
+    padding-left: 17px;
+}
+.song-info .song-detail span, .audio-duration{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 19px;
+}
+.song-info .song-detail p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px){
+    .right-container .search form{
+        width: 80%;
+    }   
+    .right-container .search form input{
+        width: 80%;
+    }
+    .search-heading{
+        width: 80%;
+    }
+    .search-list{
+        width: 80%;
+    }
+}

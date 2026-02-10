@@ -1,0 +1,183 @@
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-container .heading{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+.right-container .heading h4 b{
+    margin: 10px auto;
+    color: blueviolet;
+    font-size: 30px;
+}
+.heading .addpl,.heading .addpl button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading .addpl button{
+    width: 300px;
+    height: 100%;
+    background-color: blueviolet;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: powderblue;
+    font-size: 22px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+.heading .addpl button:hover{
+    background-color: powderblue;
+    color: blueviolet;
+
+}
+/* .heading .addpl h4 b{
+    color: powderblue;
+    font-size: 22px;
+} */
+
+
+
+.modal .modal-content .modal-footer{
+    background-color: powderblue;
+}
+.modal .modal-content .modal-footer button{
+    background-color: white;
+    color: black;
+    border: 1px solid #555;
+}
+.modal .modal-content .modal-footer button:hover{
+    background-color: #555;
+    color: white;
+
+}
+.modal .modal-content .modal-body button{
+    background-color: powderblue;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    letter-spacing: 2px;
+}
+.modal .modal-content .modal-body button:hover{
+    background-color: blueviolet;
+    color: powderblue;
+    border: 1px solid powderblue;
+}
+
+
+
+
+
+
+.search-list{
+    height: 470px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 17px 20px 12px 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+.search-list ul a{
+    text-decoration: none;
+}
+.search-list ul li{
+    list-style: none;
+}
+.search-list ul{
+    height: 450px;
+    overflow-y: auto;
+    padding-left: 0px;
+}
+.search-list ul::-webkit-scrollbar{
+    width: 0px;
+}
+.search-list ul .s-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: powderblue;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+.search-list ul li{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.search-list ul li:last-child{
+    border-bottom: 0px;
+}
+.search-list .s-row .song-info{
+    display: flex;
+    align-items: center;
+}
+.song-info .image-data{
+    height: 80px;
+    width: 80px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.song-info .image-data img{
+    height: 100% ;
+    width: 100%;
+    object-fit: fill;
+}
+.song-info .song-detail{
+    padding-left: 17px;
+}
+.song-info .song-detail span, .more .audio-duration{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 19px;
+    text-align: center;
+}
+.song-info .song-detail .audio-duration.i{
+    font-size: 50px;
+}
+.song-info .song-detail p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.more, .more a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more i{
+    margin-right: 10px;
+}
+.more i#Play{
+    /* margin-right: 50px; */
+    color: blueviolet;
+    margin-right: 5px;
+    font-size: 35px;
+    margin: 0px 20px;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .right-container .search form{
+        width: 90%;
+    }   
+    .right-container .search form input{
+        width: 90%;
+    }
+    .right-container .heading{
+        width: 90%;
+    }
+    .search-heading{
+        width: 90%;
+    }
+    .search-list{
+        width: 90%;
+    }
+}

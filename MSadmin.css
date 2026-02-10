@@ -1,0 +1,151 @@
+.admin-container{
+    margin-top: 20px;
+    /* background-color: white; */
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options button{
+    background-color: powderblue;
+    border: 1px solid rgb(114, 160, 167);
+    padding: 7px 12px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.options .opt{
+    margin: 10px 10px;
+}
+.options button:hover{
+    font-weight: bold;
+}
+
+
+.search-list{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 17px 20px 12px 20px;
+    background-color: white;
+    border-radius: 12px;
+    /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); */
+}
+.search-list ul a{
+    text-decoration: none;
+}
+.search-list ul li{
+    list-style: none;
+}
+.search-list ul{
+    height: 475px;
+    overflow-y: auto;
+    padding-left: 0px;
+}
+.search-list ul::-webkit-scrollbar{
+    width: 0px;
+}
+.search-list ul .s-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: royalblue; */
+}
+.search-list ul li{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.search-list ul li:last-child{
+    border-bottom: 0px;
+}
+.search-list .s-row .song-info{
+    display: flex;
+    align-items: center;
+}
+.song-info .image-data{
+    height: 80px;
+    width: 80px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.song-info .image-data img{
+    height: 100% ;
+    width: 100%;
+    object-fit: fill;
+}
+.song-info .song-detail{
+    padding-left: 17px;
+}
+.song-info .song-detail span, .more .audio-duration{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 19px;
+    text-align: center;
+}
+.song-info .song-detail .audio-duration.i{
+    font-size: 50px;
+}
+.song-info .song-detail p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more i#add{
+    margin-left: 20px;
+    color: blueviolet;
+    font-size: 30px;
+    margin-right: 25px;
+    text-shadow: 0 0 0px blueviolet;
+}
+.more i#add:hover{
+    /* text-shadow: 0 0 10px powderblue; */
+    transform: scale(1.2);
+}
+.more i#done{
+    margin-left: 20px;
+    color: lime;
+    font-size: 30px;
+    margin-right: 25px;
+    text-shadow: 0 0 2px lime;
+}
+.more i{
+    text-shadow: 0 0 3px black;
+}
+.more i:hover{
+    text-shadow: 0 0 6px black;
+}
+
+.space .form-label{
+    margin-bottom: 5px;
+}
+.space input{
+    margin-bottom: 20px;
+}
+.space button{
+    padding: 7px 17px;
+    letter-spacing: 1px;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+.space button:hover{
+    background-color: powderblue;
+    border: 1px solid powderblue;
+    color: #333;
+    text-shadow: 0 0 0 #333;
+}
+
+form select{
+    margin-bottom: 17px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .search-list{
+        width: 100%;
+    }
+}
